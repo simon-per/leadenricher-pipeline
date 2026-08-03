@@ -1,0 +1,35 @@
+# This repo is documentation only. Everything below is here so that data,
+# credentials, or exported results can never be committed by accident.
+
+# Data — may contain personal data (GDPR)
+*.csv
+*.xlsx
+*.json
+data/
+screenshots/raw/
+
+# Images are denied by default and whitelisted one file at a time. A screenshot
+# of the Outreach or Contacts sheet contains real names and working email
+# addresses; only the QC sheet (aggregate metrics) is safe to publish.
+*.png
+*.jpg
+*.jpeg
+*.webp
+!screenshots/qc.png
+
+# Secrets
+.env*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
