@@ -30,8 +30,8 @@ Three ideas run through all of it:
 
 ## 1. Input and resolution
 
-Client lists arrive as they are. Headers match case-insensitively and then normalised, and non-UTF-8
-CSVs — the default when German Excel saves a file — decode through a fallback chain. Duplicate
+Client lists arrive as they are. Headers are matched case-insensitively and then in normalised form,
+and non-UTF-8 CSVs — the default when German Excel saves a file — decode through a fallback chain. Duplicate
 companies collapse on domain, or on the name with its legal form stripped, before anything downstream
 acts: every surviving duplicate gets scraped twice and paid for twice, which makes cleaning the list
 the cheapest cost control here.

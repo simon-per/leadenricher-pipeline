@@ -39,7 +39,7 @@ One client list, delivered:
 
 ![QC metrics from the delivered run](screenshots/qc.png)
 
-*The QC sheet the pipeline wrote for that run — where the figures above come from.*
+*From the QC sheet the pipeline wrote for that run.*
 
 Every paid answer is cached, so re-running the list takes about twenty seconds and costs nothing.
 
